@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Security Detection System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <h1>🛡️THREATPULSE</h1>
+            <p>Multimodal Threat Detection Platform</p>
+        </div>
+
+        <div class="status" id="systemStatus">
+            Checking systems...
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Security Detection Dashboard</h2>
+
+            <p>
+                Select the type of content you want to analyze.
+                Our AI-based detection systems will analyze the input
+                and identify potential security threats.
+            </p>
+        </section>
+
+
+        <section class="cards">
+
+            <!-- PHISHING -->
+
+            <div class="card phishing-card">
+
+                <div class="icon">🎣</div>
+
+                <h2>Phishing Detection</h2>
+
+                <p>
+                    Detect potentially malicious or fraudulent
+                    URLs, emails, QR codes and screenshots.
+                </p>
+
+                <div class="features">
+                    <span>🔗 URL</span>
+                    <span>📧 Email</span>
+                    <span>📱 QR Code</span>
+                    <span>🖼️ Screenshot</span>
+                </div>
+
+                <a
+                    href="http://127.0.0.1:5000"
+                    target="_blank"
+                    class="button phishing-button"
+                >
+                    Open Phishing Detection
+                </a>
+
+            </div>
+
+
+            <!-- DEEPFAKE -->
+
+            <div class="card deepfake-card">
+
+                <div class="icon">🎭</div>
+
+                <h2>Deepfake Detection</h2>
+
+                <p>
+                    Detect manipulated or synthetic media using
+                    AI-based image and audio analysis.
+                </p>
+
+                <div class="features">
+                    <span>🖼️ Image</span>
+                    <span>🎵 Audio</span>
+                </div>
+
+                <a
+                    href="http://127.0.0.1:8001"
+                    target="_blank"
+                    class="button deepfake-button"
+                >
+                    Open Deepfake Detection
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="architecture">
+
+            <h2>System Architecture</h2>
+
+            <div class="architecture-flow">
+
+                <div class="flow-box main-box">
+                    🛡️<br>
+                    <strong>Integrated Dashboard</strong>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="flow-box">
+                    🎣<br>
+                    <strong>Phishing Detection</strong>
+                    <small>Port 8000</small>
+                </div>
+
+                <div class="arrow">+</div>
+
+                <div class="flow-box">
+                    🎭<br>
+                    <strong>Deepfake Detection</strong>
+                    <small>Port 8001</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="info">
+
+            <h2>AI-Based Security</h2>
+
+            <p>
+                This platform combines multiple AI-based detection
+                techniques to analyze different forms of potentially
+                malicious digital content.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>AI Security Detection System • Multimodal Threat Analysis</p>
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

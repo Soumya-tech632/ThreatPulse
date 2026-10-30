@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DEEP SHIELD | Deepfake Detection</title>
+
+    <!-- IMPORTANT: your actual file is styles.css -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="shield-icon">🛡</span>
+            <span>DEEP SHIELD</span>
+        </div>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            AI Detection System
+        </div>
+
+    </header>
+
+
+    <main class="main-container">
+
+        <section class="hero">
+
+            <div class="hero-badge">
+                AI-POWERED MEDIA VERIFICATION
+            </div>
+
+            <h1>
+                Detect Deepfakes.<br>
+                <span>Protect What's Real.</span>
+            </h1>
+
+            <p>
+                Upload an image or audio file and let DEEP SHIELD
+                analyze it for signs of synthetic or manipulated content.
+            </p>
+
+        </section>
+
+
+        <section class="detector-card">
+
+            <div class="detector-header">
+
+                <h2>Deepfake Detection</h2>
+
+                <p>
+                    Upload an image or audio file to begin.
+                </p>
+
+            </div>
+
+
+            <!-- UPLOAD AREA -->
+
+            <div class="upload-area" id="uploadArea">
+
+                <div class="upload-icon">
+                    ↑
+                </div>
+
+                <h3>Upload your file</h3>
+
+                <p>
+                    Drag & drop your image or audio here
+                </p>
+
+                <span class="or">
+                    or
+                </span>
+
+                <label
+                    for="fileInput"
+                    class="browse-btn"
+                >
+                    Choose File
+                </label>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept=".jpg,.jpeg,.png,.wav,.mp3,audio/*,image/*"
+                    hidden
+                >
+
+                <div class="supported">
+                    Supported: JPG, PNG, WAV, MP3
+                </div>
+
+            </div>
+
+
+            <!-- SELECTED FILE -->
+
+            <div
+                class="selected-file"
+                id="selectedFile"
+            >
+
+                <div class="file-info">
+
+                    <div
+                        class="file-icon"
+                        id="fileIcon"
+                    >
+                        📄
+                    </div>
+
+                    <div>
+
+                        <strong id="fileName">
+                            File
+                        </strong>
+
+                        <small id="fileType">
+                            Media file
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="removeFile"
+                    class="remove-btn"
+                    type="button"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- DETECT BUTTON -->
+
+            <button
+                id="detectBtn"
+                class="detect-btn"
+                type="button"
+                disabled
+            >
+
+                <span>
+                    Detect Deepfake
+                </span>
+
+                <span class="arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- LOADING -->
+
+            <div
+                class="loading"
+                id="loading"
+            >
+
+                <div class="spinner"></div>
+
+                <div>
+
+                    <strong>
+                        Analyzing media...
+                    </strong>
+
+                    <p>
+                        AI detection is in progress
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div class="result-card" id="result">
+
+    <div class="result-icon" id="resultIcon">✓</div>
+
+    <div class="result-content">
+
+        <h3 id="resultText">Authentic Media</h3>
+
+        <p id="resultDescription">
+            The AI model did not identify strong signs of synthetic manipulation.
+        </p>
+
+        <div class="result-details">
+
+            <div class="detail-item">
+                <span>Confidence</span>
+                <strong id="confidenceText">--</strong>
+            </div>
+
+            <div class="detail-item">
+                <span>Media Type</span>
+                <strong id="mediaTypeText">--</strong>
+            </div>
+
+        </div>
+
+        <div class="analysis-message" id="analysisMessage">
+            Your uploaded media has been analyzed by the Deep Shield detection model.
+        </div>
+
+    </div>
+
+</div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            🛡 DEEP SHIELD
+        </div>
+
+        <p>
+            AI-powered protection against synthetic media.
+        </p>
+
+    </footer>
+
+
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>

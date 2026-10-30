@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+phishing_env/
+phishing_env310/
+deepfake_env310/
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Temporary files and logs
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Uploaded/generated files
+uploads/
+temp/
+tmp/
+
+# Large model weights - uploaded separately as GitHub Release assets
+DeepShield/backend/models/audio_model/model.safetensors
+DeepShield/backend/models/image_model/EfficientnetV2_model.pth
+PhishShield/backend/models/RoBERTa_model/model.safetensors

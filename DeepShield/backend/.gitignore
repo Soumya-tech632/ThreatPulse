@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+/data/
+/data/*
+/data/test_data/
+/data/test_data/*
+
+
+backend/app/gradio_app.py
