@@ -1,8 +1,8 @@
-\# ThreatPulse
+# ThreatPulse
 
 
 
-\### AI-Powered Integrated Phishing and Deepfake Detection System
+### AI-Powered Integrated Phishing and Deepfake Detection System
 
 
 
@@ -14,13 +14,13 @@ It combines two existing projects into one platform:
 
 
 
-\* \*\*PhishShield:\*\* Detects phishing-related threats such as suspicious URLs, emails, QR codes, and screenshots.
+* **PhishShield:** Detects phishing-related threats such as suspicious URLs, emails, QR codes, and screenshots.
 
-\* \*\*DeepShield:\*\* Detects potentially manipulated images and audio using deep learning models.
+* **DeepShield:** Detects potentially manipulated images and audio using deep learning models.
 
 
 
-\## Project Architecture
+## Project Architecture
 
 
 
@@ -64,11 +64,11 @@ It combines two existing projects into one platform:
 
 
 
-\## Main Modules
+## Main Modules
 
 
 
-\### 1. PhishShield
+### 1. PhishShield
 
 
 
@@ -80,21 +80,21 @@ Features:
 
 
 
-\* URL phishing detection using XGBoost.
+* URL phishing detection using XGBoost.
 
-\* Email phishing detection using RoBERTa.
+* Email phishing detection using RoBERTa.
 
-\* Domain information analysis using WHOIS.
+* Domain information analysis using WHOIS.
 
-\* QR code extraction and analysis.
+* QR code extraction and analysis.
 
-\* Screenshot-based phishing analysis.
+* Screenshot-based phishing analysis.
 
-\* Risk score aggregation.
+* Risk score aggregation.
 
 
 
-\### 2. DeepShield
+### 2. DeepShield
 
 
 
@@ -106,15 +106,15 @@ Features:
 
 
 
-\* Image-based deepfake detection using EfficientNetV2.
+* Image-based deepfake detection using EfficientNetV2.
 
-\* Audio-based deepfake detection using Wav2Vec2.
+* Audio-based deepfake detection using Wav2Vec2.
 
-\* Prediction and confidence score display.
+* Prediction and confidence score display.
 
 
 
-\### 3. Integration Dashboard
+### 3. Integration Dashboard
 
 
 
@@ -122,31 +122,31 @@ The integration module provides a common entry point to access both detection sy
 
 
 
-\## Technologies Used
+## Technologies Used
 
 
 
-\* Python
+* Python
 
-\* Flask
+* Flask
 
-\* FastAPI
+* FastAPI
 
-\* HTML, CSS, JavaScript
+* HTML, CSS, JavaScript
 
-\* Scikit-learn
+* Scikit-learn
 
-\* XGBoost
+* XGBoost
 
-\* Hugging Face Transformers
+* Hugging Face Transformers
 
-\* PyTorch
+* PyTorch
 
-\* OpenCV
+* OpenCV
 
 
 
-\## Repository Structure
+## Repository Structure
 
 
 
@@ -200,7 +200,7 @@ ThreatPulse/
 
 
 
-\## Running the Project
+## Running the Project
 
 
 
@@ -226,7 +226,7 @@ Start each service in a separate terminal.
 
 
 
-\### Access the dashboard
+### Access the dashboard
 
 
 
@@ -238,7 +238,7 @@ After starting all services, open:
 
 
 
-\### Model Files
+### Model Files
 
 
 
@@ -250,7 +250,7 @@ Download the required model files from the project's GitHub Releases:
 
 
 
-\*\*Model download instructions:\*\* To be added after publishing the release assets.
+**Model download instructions:** To be added after publishing the release assets.
 
 
 
@@ -262,11 +262,11 @@ Place each downloaded model in its corresponding directory:
 
 | ------------- | ---------------------------------------------------------------- |
 
-| Audio model   | `DeepShield/backend/models/audio\_model/model.safetensors`        |
+| Audio model   | `DeepShield/backend/models/audio_model/model.safetensors`        |
 
-| Image model   | `DeepShield/backend/models/image\_model/EfficientnetV2\_model.pth` |
+| Image model   | `DeepShield/backend/models/image_model/EfficientnetV2_model.pth` |
 
-| RoBERTa model | `PhishShield/backend/models/RoBERTa\_model/model.safetensors`     |
+| RoBERTa model | `PhishShield/backend/models/RoBERTa_model/model.safetensors`     |
 
 
 
@@ -274,7 +274,7 @@ The project requires these model files for the corresponding detection features.
 
 
 
-\## Project Credits and Acknowledgements
+## Project Credits and Acknowledgements
 
 
 
@@ -282,9 +282,9 @@ This project integrates and builds upon the following existing projects:
 
 
 
-\* \*\*PhishGuard:\*\* \[Nandan-1127/PhishGuard-Multimodal-Phishing-Detection-System](https://github.com/Nandan-1127/PhishGuard-Multimodal-Phishing-Detection-System)
+* **PhishGuard:** [Nandan-1127/PhishGuard-Multimodal-Phishing-Detection-System](https://github.com/Nandan-1127/PhishGuard-Multimodal-Phishing-Detection-System)
 
-\* \*\*Multimodal Deepfake Detection:\*\* \[Akshayredekar07/Multimodal-Deepfake-Detection](https://github.com/Akshayredekar07/Multimodal-Deepfake-Detection)
+* **Multimodal Deepfake Detection:** [Akshayredekar07/Multimodal-Deepfake-Detection](https://github.com/Akshayredekar07/Multimodal-Deepfake-Detection)
 
 
 
@@ -292,15 +292,15 @@ Their original authors and licenses are acknowledged. The integrated platform do
 
 
 
-\## Team
+## Team
 
 
 
-\*\*Project:\*\* ThreatPulse
+**Project:** ThreatPulse
 
 
 
-\*\*Team Members:\*\*
+**Team Members:**
 
 
 
@@ -314,27 +314,27 @@ Their original authors and licenses are acknowledged. The integrated platform do
 
 
 
-\## Future Scope
+## Future Scope
 
 
 
-\* Centralized file submission and analysis.
+* Centralized file submission and analysis.
 
-\* Real-time threat monitoring.
+* Real-time threat monitoring.
 
-\* Automated threat prevention.
+* Automated threat prevention.
 
-\* Improved model evaluation and calibration.
+* Improved model evaluation and calibration.
 
-\* Enhanced reporting and visualization.
-
-
-
-\---
+* Enhanced reporting and visualization.
 
 
 
-\*\*ThreatPulse — Integrated AI-Based Security Detection\*\*
+---
+
+
+
+**ThreatPulse — Integrated AI-Based Security Detection**
 
 
 
